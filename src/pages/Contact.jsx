@@ -23,6 +23,7 @@ export default function Contact() {
   return (
     <div className="pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="max-w-3xl mb-12">
           <span className="text-xs uppercase tracking-widest text-accent font-semibold">Get In Touch</span>
           <h1 className="text-3xl sm:text-5xl font-serif text-charcoal-900 font-normal mt-2">
@@ -34,6 +35,7 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          {/* Left: Contact Info (5 Cols) */}
           <div className="lg:col-span-5 space-y-8">
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-sand-200/80 shadow-sm space-y-6">
               <h2 className="font-serif text-xl text-charcoal-900 font-medium">Headquarters</h2>
@@ -43,15 +45,15 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <div>
                     <span className="font-medium text-charcoal-900 block">PrimeNest Experience Centre</span>
-                    <span>Baner Road, Pune, Maharashtra 411045</span>
+                    <span>Baner Road, Pune, Maharashtra</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-accent shrink-0" />
                   <div>
-                    <span className="font-medium text-charcoal-900 block">Phone Consultation</span>
-                    <span>+91 98765 43210</span>
+                    <span className="font-medium text-charcoal-900 block">Phone Consultation / WhatsApp</span>
+                    <span>+91 89757 17380</span>
                   </div>
                 </div>
 
@@ -59,7 +61,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-accent shrink-0" />
                   <div>
                     <span className="font-medium text-charcoal-900 block">General Enquiries</span>
-                    <span>hello@primenest.example</span>
+                    <span>Saurabhmangulkar@rediffmail.com</span>
                   </div>
                 </div>
 
@@ -73,6 +75,7 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Map Preview Graphic */}
             <div className="bg-sand-100 rounded-2xl border border-sand-200 p-6 flex flex-col items-center justify-center text-center aspect-[16/9] relative overflow-hidden group">
               <div 
                 className="absolute inset-0 opacity-40 bg-cover bg-center filter grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -88,6 +91,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Right: Form (7 Cols) */}
           <div className="lg:col-span-7">
             <div className="bg-white p-6 sm:p-10 rounded-2xl border border-sand-200/80 shadow-sm">
               {formSubmitted ? (
@@ -133,7 +137,7 @@ export default function Contact() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 89757 17380"
                           className="w-full px-3.5 py-2.5 bg-sand-50 rounded-xl text-sm border border-sand-200 focus:outline-none focus:border-accent"
                         />
                       </div>
@@ -194,6 +198,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

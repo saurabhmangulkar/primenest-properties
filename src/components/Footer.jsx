@@ -17,24 +17,26 @@ export default function Footer() {
               PrimeNest Properties is a modern residential advisory firm helping clients discover high-caliber homes and prime investment spaces across India.
             </p>
             
-            {/* Social Icons (Native SVGs) */}
+            {/* Social Icons */}
             <div className="flex gap-4 mt-6">
-              {/* Instagram */}
               <a 
-                href="#demo" 
-                aria-label="Instagram" 
+                href="https://saurabh-mangulkar.vercel.app" 
+                target="_blank" 
+                rel="noreferrer"
+                aria-label="SM Technologies Portfolio" 
                 className="w-9 h-9 rounded-full border border-sand-200/20 flex items-center justify-center text-sand-200/70 hover:text-white hover:border-white transition-colors"
               >
                 <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
               </a>
 
-              {/* LinkedIn */}
               <a 
-                href="#demo" 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noreferrer"
                 aria-label="LinkedIn" 
                 className="w-9 h-9 rounded-full border border-sand-200/20 flex items-center justify-center text-sand-200/70 hover:text-white hover:border-white transition-colors"
               >
@@ -45,9 +47,10 @@ export default function Footer() {
                 </svg>
               </a>
 
-              {/* Twitter / X */}
               <a 
-                href="#demo" 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noreferrer"
                 aria-label="Twitter" 
                 className="w-9 h-9 rounded-full border border-sand-200/20 flex items-center justify-center text-sand-200/70 hover:text-white hover:border-white transition-colors"
               >
@@ -80,34 +83,44 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Headquarters */}
+          {/* Contact Details */}
           <div>
             <h4 className="text-xs uppercase tracking-widest text-accent font-semibold mb-4">Prime Headquarters</h4>
             <div className="space-y-3 text-sm text-sand-200/70">
               <p className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-1" />
-                <span>Baner Road, Pune, Maharashtra 411045</span>
+                <span>Baner Road, Pune, Maharashtra</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-accent shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 89757 17380</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-accent shrink-0" />
-                <span>hello@primenest.example</span>
+                <span>Saurabhmangulkar@rediffmail.com</span>
               </p>
             </div>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar: Agency Attribution */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sand-200/50">
           <p>© 2026 PrimeNest Properties. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <span>Website Demo by [Agency Name]</span>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <span>
+              Website Demo by{" "}
+              <a 
+                href="https://saurabh-mangulkar.vercel.app" 
+                target="_blank" 
+                rel="noreferrer"
+                className="text-sand-100 font-semibold text-accent hover:underline transition-colors"
+              >
+                SM Technologies
+              </a>
+            </span>
             <span className="hidden sm:inline">•</span>
-            <span>Interactive Frontend Architecture</span>
+            <span>Websites That Help Your Business Grow</span>
           </div>
         </div>
       </div>
